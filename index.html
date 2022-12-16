@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="bulma.min.css">
+   <link rel="icon" type="image/png" href="./img/krypton-gradient.svg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Krypton project</title>
+</head>
+<body>
+       <!-- Start navbar -->
+  <nav class="navbar is-darkest "id="navbar1" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="./img/krypton.svg"class="rotate-img navbar-brand-img "id="navbar-brand-img" width="112" height="28">
+          <span class="brand-name is-size-4  is-uppercase has-text-white">Krypton</span>
+        </a>
+        <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item has-text-white is-size-7" href="token.html">
+            TOKEN
+          </a>
+          <a class="navbar-item has-text-white is-size-7" href="ico.html">
+            ICO
+          </a>
+          <a class="navbar-item has-text-white is-size-7" href="roadmap.html">
+            ROADMAP
+          </a>
+          <a class="navbar-item has-text-white is-size-7" href="blog.html">
+            MEDIA
+          </a>
+          <a class="navbar-item has-text-white is-size-7" href="#pricing">
+            <img src="./img/telegram.svg "width="10px">  TELEGRAM
+          </a>
+       
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button register  border-none has-gradient ">
+                <strong class="mystrong has-text-white is-size-7 is-uppercase py-4">Register</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End of navbar -->
+        <!-- start media  -->
+ <section class="section is-darkest">
+<div class="container">
+    <div class="columns is-vcentered mt-6">
+        <div class="column is-5 is-offset-1 landing-caption">
+            <hr width="100px" style="height:4px ; background-image: linear-gradient(to right, #7F00FF, #3f00fc) !important; ">
+            <h1 class="title mt-5 has-text-white is-size-2">News & Media </h1>
+            <p class="subtitle mt-1 is-size-6   is-compact has-text-white">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Ut sea pertinax perpetua, eruditi volumus quaestio ex mel, has ei tota homero.</p>
+        </div>
+        <div class="column is-6">
+            <div class="image">
+                <img src="./img/media.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+ </section>
+  
+<!-- end media section  -->
+
+<!-- start  Media & Partners -->
+<section class="section is-large is-darkest "id="app">
+    <div class="container is-centered">
+     <hr width="100px" style="height:4px ; background-image: linear-gradient(to right, #7F00FF, #3f00fc) !important;  ;margin:0 auto;">
+     <h1 class=" title has-text-white mt-5 is-semibold has-text-centered is-spaced">  Media & Partners</h1>
+     <p class=" subtitle is-6 has-text-white has-text-centered is-compact">
+       Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Ut sea pertinax perpetua, eruditi volumus quaestio ex mel, has ei tota homero.
+    </p>
+    <div class="columns is-centered ">
+        <div class="column is-9 ">
+          <div class="container-post">
+            
+              <!-- <input type="search" class="has-solar mysearch p-4  is-fullwidth" placeholder="search" v-model="searchValue" name="" id=""> -->
+              <div class="post is-darkest mt-2 p-6 "v-for="post in secondList">
+                <a href="" class="">
+                  <div class="columns">
+                    <div class="column is-3">
+                      <div class="image-post ">
+                      <img src="./img/post1.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="content-post ml-5">
+                                    <div class="post-title has-text-light is-size-6 mt-5">
+              {{post.title}}
+                    <span class="date-post is-size-7">15.04.2021</span>
+                                    </div>
+                                    <p class="subtitle has-text-info is-size-6 mt-1">
+                                      {{post.body}}
+                    </p>
+                    <div class="post-foot is-flex ">
+                      <img src="./img/team/joshua.jpg"width="30px" alt="">
+                      <div class="author-name ml-3 is-size-7 is-vcentered has-text-white mt-2">by Sandra Bernard</div>
+                      <div class="comments is-flex">
+                        <div class="likes">
+                          <i class="fa fa-heart"></i>
+                          <span class="has-text-white">4</span></div>
+                        <div class="comment ml-4">
+                          <i class="fa fa-cloud"></i>
+                          <span class="myspan has-text-white ">4</span></div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            
+          </div>
+         
+      
+          <div class="buttons is-centered">
+            <div class="button  border-none is-uppercase  has-text-white is-size-7 py-5 px-5 mt-6 is-medium has-gradient">More Articles</div>
+          </div>
+        
+        </div>
+        <div class="column is-3">
+            <div>
+                <div class="search-widget">
+                    <div class="control">
+                        <!-- Field -->
+                        <div class="control-material is-primary">
+                          <input type="search" class="inputsearch is-centered "v-model="searchValue" />
+                          <span class="float-search"id="float-search">search</span>
+                          <span class="bar-search"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-search" >
+                    <div class="categories-widget">
+                        <div class="widget-title has-text-info  is-uppercase">
+                            Categories
+                        </div>
+                        <ul class="categories-list ">
+                            <li><a href="#" class="is-active is-flex">
+                                <span>All Posts</span>
+                                <span class="tag">53</span>
+                            </a>
+                        </li>
+                        <li><a href="#" class="link-categoty">Blockchain</a></li>
+                        <li><a href="#" class="link-categoty">Crypto Market</a></li>
+                        <li><a href="#" class="link-categoty">Cryptomining</a></li>
+                        <li><a href="#" class="link-categoty">Featured</a></li>
+                        </ul>
+                    </div>
+                    <div class="tags-widget">
+                        <div class="widget-title has-text-info is-uppercase ">
+                            Tags
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Bitcoin</span>
+                            <span class="tag">Cryptocurrency</span>
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">Ethereum</span>
+                        </div>
+                    
+                        <div class = "dropdown">
+                          <div class = "dropdown-trigger">
+                             <button class = "button drop-btn" aria-haspopup = "true" aria-controls = "dropdown-menu">
+                                <span class="dorp-content">Countries</span>
+                                <span class = "icon is-small">
+                                   <i class = "fa fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                             </button>
+                          </div>
+                          <div class = "dropdown-menu" id = "dropdown-menu" role = "menu">
+                             <div class = "dropdown-content">
+                                <a href = "#" class = "dropdown-item">India</a>
+                                <a class = "dropdown-item">England</a>
+                                <a href = "#" class = "dropdown-item is-active">Australia</a>
+                                <a href = "#" class = "dropdown-item">Srilanka</a>
+                                <hr class = "dropdown-divider">
+                                <a href = "#" class = "dropdown-item">South Africa</a>
+                             </div>
+                          </div>
+                       </div>
+                      </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+  </div>   
+   </section>
+   <!-- end  Media & Partners -->
+   <!-- start footer  -->
+   <footer class="krypton-footer has-solar is-medium has-text-centered ">
+    <div class="container ">
+      <div class="footer-logo is-centered mt-6">
+        <img src="./img/krypton-gradient.svg"class="rotate-img"width="70px" alt="">
+        <h1 class="title has-text-white is-uppercase is-4">Krypton</h1>
+        <h4 class="subtitle is-family-sans-serif is-uppercase  has-text-info is-7 my-5">Blockchain brought to another level</h4>
+      </div>
+      <div class="footer-middel">
+  <div class="columns footer-columns is-vcentered  ">
+      <div class="column is-4">
+        <ul class="footer-link">
+          <li class="has-text-white">token</li>
+          <li class="has-text-white">ICO</li>
+          <li class="has-text-white">ROADMAP</li>
+        </ul>
+      </div>
+      <div class="column is-4">
+        <div class="buttons">
+          <input type="email"class="input-krypton is-rounded">
+          <button class=" subscribe-btn is-rounded">subscribe</button>
+        </div>
+      </div>
+      <div class="column is-4">
+        <ul class="footer-link">
+          <li class="has-text-white">REGISTER</li>
+          <li class="has-text-white">MEDIA</li>
+          <li class="has-text-white">TELEGRAM</li>
+        </ul>
+      </div>
+  </div>
+  <div class="footer-bottom ">
+    <p class="subtitle has-text-info mt-6 is-size-6">&copy;2021-2022 | Krypton. All Rights Reserved</p>
+  
+  <p class="subtitle has-text-white is-size-7">Designed and Coded by Rahaf</p>
+  </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer  -->
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+
+    });
+
+    
+  </script>
+      <script>
+        //DOMContentLoaded - it fires when initial HTML document has been completely loaded
+        document.addEventListener('DOMContentLoaded', function () {
+           // querySelector - it returns the element within the document that matches the specified selector
+           var dropdown = document.querySelector('.dropdown');
+             
+           //addEventListener - attaches an event handler to the specified element.
+           dropdown.addEventListener('click', function(event) {
+             
+              //event.stopPropagation() - it stops the bubbling of an event to parent elements, by preventing parent event handlers from being executed
+              event.stopPropagation();
+               
+              //classList.toggle - it toggles between adding and removing a class name from an element
+              dropdown.classList.toggle('is-active');
+           });
+        });        
+     </script>
+     <!-- <script src="post.js"></script> -->
+     <script src="postApi.js" type="module"></script>
+     <script src="posApi.js"type="module"></script>
+     <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+  </body>
+  </html>
